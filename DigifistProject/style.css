@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+    
+@font-face {
+    font-family: "avenir";
+    src: url("../DigifistProject/Avenir.ttc") format("truetype");
+}
+
+@font-face {
+    font-family: "avantbk";
+    src: url("../DigifistProject/ITCAvantGardePro-Bk.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "avantbold";
+    src: url("../DigifistProject/ITCAvantGardePro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "avantdemi";
+    src: url("../DigifistProject/ITCAvantGardePro-Demi.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "avantmd";
+    src: url("../DigifistProject/ITCAvantGardePro-Md.otf") format("opentype");
+}
+
+
+.mainContainer{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.itemContainer{
+    width: 50%;
+    display: inline-block;
+}
+.itemContainer img{
+    width: 100%;
+}
+.sideContainer{
+       width: 50%;
+       display: inline-block;
+}
+.sliderside{ padding: 0 0 0 100px;}
+
+.p0{ padding: 0 !important;}
+
+
+
+/* This field is for the shopping card on the side */
+
+.swiper-slide p{
+    font-size: 12px;
+    font-family: "avenir";
+}
+
+.swiper-slide p input{
+    float: right;
+    margin-right: 4px;
+}
+.swiper-slide p span{
+    float: right;
+    margin-right: 4px;
+}
+.sideContainer p{
+    font-family: "avenir";
+    opacity: 0.5;
+    padding: 0 0 0 100px;
+}
+
+
+.sideContainer img{
+    width: 110%;
+    padding-top: 40px;
+    padding-right: 25px;
+    
+    
+}
+
+.sideContainer h2{
+    font-size: 32px;
+    font-family: "avantbold";
+    padding: 40px 0 0 100px;
+}
+
+
+/* This are for moving underline */
+
+.sideContainer a{
+    font-family: "avenir";
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    padding: 0 0 0 100px;
+    text-decoration: underline;
+}
+
+.sideContainer a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    top: 25px;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 15px !important;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  
+    top: 50% !important;
+    left: auto;
+    width: 14px !important;
+    height: 14px !important;
+    padding: 10px !important;
+    border: 1px rgb(181, 181, 181) solid;
+    font-size: 5px !important;
+    color: black !important;
+    font-size: small !important;
+    opacity: 0.6;
+ 
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10% !important;
+    left: auto;
+}
+.r1{ 
+    -webkit-border-radius:15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+   
+}
+.r2{ 
+    -webkit-border-radius:15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    background-color:  brown;
+}.r3{ 
+    -webkit-border-radius:15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: purple;
+}.r4{ 
+    -webkit-border-radius:15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 13px;
+    height: 13px;
+    background-color: green;
+    border: 1px black solid;
+}
+
+
+/* This area for Media Queries */    
+
+
+@media only screen and (max-device-width : 800px) {
+    .mainContainer{
+        display: inline-block !important  ;
+    }
+    .itemContainer{
+        min-width: 100%;
+        width: 100% !important;
+        display: inline-block !important;
+       }
+    
+    .sideContainer{
+           width: 100% !important;
+           display: inline-block !important;
+           position: absolute;
+            top: 292px;
+            left: -54px;
+    }
+    .sliderside{ padding: 0 0 0 100px;}
+
+
+    .sideContainer a{
+        color: white;
+    }
+
+    .sideContainer h2{
+        color: white;
+    }
+
+    .sideContainer p{
+        color: white;
+    }
+    
+    }
